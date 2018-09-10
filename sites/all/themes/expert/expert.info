@@ -1,0 +1,37 @@
+screenshot  = screenshot.jpg
+name        = StroyEXP
+description = АО НИЦ «Строительная Экспертиза»
+
+core        = 7.x
+
+; Then we add our own stylesheets.
+stylesheets[all][] = css/styles.css
+stylesheets[all][] = css/edit.css
+
+; Optionally add some JavaScripts to your theme.
+
+
+scripts[] = js/libs/jquery-1.8.3.min.js
+scripts[] = js/libs/jquery.jcarousel.min.js
+scripts[] = js/libs/modernizr.min.js
+scripts[] = js/app.js
+
+
+regions[header]         = Шапка сайта
+regions[first_menu]     = Основное меню
+regions[s_search]       = Поиск
+regions[portfolio]      = Портфолио
+regions[highlighted]    = Над контентом
+regions[help]           = Помощь
+regions[content]        = Контент
+regions[sidebar]        = Правый регион
+regions[second_menu]    = Ссылки в футере слева
+regions[third_menu]     = Ссылки в футере справа
+regions[footer]         = Подвал сайта
+
+; The page_top and page_bottom regions are hidden, which means they will not
+; show up on the blocks administration page. But they are required in order for
+; the html.tpl.php to work properly, so do not delete them.
+
+regions[page_top]       = Page top
+regions[page_bottom]    = Page bottom

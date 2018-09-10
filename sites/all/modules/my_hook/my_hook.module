@@ -1,0 +1,44 @@
+<?php
+
+function my_hook_form_search_block_form_alter(&$form, &$form_state, $form_id) {
+  $form['search_block_form']['#attributes']['placeholder'] = t('Search');
+}
+
+function my_hook_form_contact_site_form_alter(&$form, &$form_state, $form_id) {
+
+$form['name']['#weight'] = '0';
+$form['mail']['#weight'] = '1';
+$form['subject']['#weight'] = '3';
+$form['message']['#weight'] = '4';
+$form['actions']['#weight'] = '5';
+/*
+$form['maphone'] = array(
+    '#type' => 'textfield', 
+    '#title' => t('Your phone'), 
+    '#maxlength' => 255, 
+    '#required' => FALSE,
+	'#weight' => 2
+  );
+*/
+$form['copy']['#type'] = 'hidden';
+//$form['subject']['#type'] = 'textfield';
+$form['subject']['#title'] = '';
+
+$form['name']['#title'] = '';
+$form['mail']['#title'] = '';
+$form['message']['#title'] = '';
+$form['name']['#attributes']['placeholder'] = 'Ваше имя';
+$form['subject']['#attributes']['placeholder'] = 'Тема сообщения';
+$form['mail']['#attributes']['placeholder'] = 'Ваш e-Mail';
+$form['maphone']['#attributes']['placeholder'] = 'Ваш телефон';
+$form['message']['#attributes']['placeholder'] = 'Текст сообщения';
+$form['actions']['submit']['#value'] = 'Отправить';
+
+$form['name']['#prefix'] = '<div class="gray"><div class="wrap"><p>Мы работаем в этой области уже много лет и готовы ответить на все ваши вопросы, а также предоставить вам дополнительные материалы по интересующей вас тематике.</p><h2>СВЯЖИТЕСЬ С НАМИ</h2>';
+$form['subject']['#suffix'] = '</div></div>';
+$form['message']['#prefix'] = '<div class="wrap">';
+$form['actions']['#suffix'] = '</div>';
+
+
+ 
+}

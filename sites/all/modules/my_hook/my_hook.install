@@ -1,0 +1,7 @@
+<?php
+
+function my_hook_install() {
+}
+
+function my_hook_uninstall() {
+}

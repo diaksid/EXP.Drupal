@@ -1,0 +1,114 @@
+<!doctype html>
+<!--[if IE 7 ]>    <html lang="ru" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="ru" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="ru" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="ru"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>v5_feedback</title>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&subset=latin,cyrillic">
+	<link rel="stylesheet" href='http://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700&subset=cyrillic,latin'>
+	<link rel="stylesheet" href="css/styles.css"/>
+	<script src="js/libs/modernizr.min.js"></script>
+</head>
+<body>
+	<div class="page">
+		<div class="main">
+			<header >
+				<div class="black"></div>
+				<a href="#"><img src="img/logo.png" width="187" height="99" alt="" class="logo"/></a>
+				<nav>
+  					<ul>
+  						<li class="menu1"><a href=""></a></li>
+    					<li class="menu2"><a href="#" class="active">ОБСЛЕДОВАНИЕ ЗДАНИЙ И СООРУЖЕНИЙ</a></li>
+    					<li class="menu3"><a href="#">ТЕХНИЧЕСКИЙ НАДЗОР</a>
+      					<ul class="menu">
+        						<li><a href="#">Визуальное обследование</a></li>
+        						<li><a href="#">Инструментальное обследование</a></li>
+        						<li><a href="#">Обмерочные работы</a></li>
+        						<li><a href="#">Техническое заключение</a></li>
+      					</ul>
+    					</li>
+    					<li class="menu4"><a href="#">ЛАБОРАТОРНОЕ СОПРОВОЖДЕНИЕ СТРОИТЕЛЬСТВА</a></li>
+    					<li class="menu5"><a href="#">ИНЖЕНЕРНЫЕ ИЗЫСКАНИЯ</a></li>
+    					<li class="menu6"><a href="#">СУДЕБНАЯ ЭКСПЕРТИЗА</a></li>
+  					</ul>
+				</nav>
+				<h2>научно- исследовательский центр</h2>
+				<address >МОСКВА, Ярославское шоссе, д.26<br>+7 4952257474 <br>+7 4952257474<br> <a href="">email@gmail.com</a></address>
+			</header>
+			<form action="#" method="post" class="search"><div class="black"></div><div class="img"></div><input type="text"/><input type="submit" value=""/></form>
+			<section class="form">
+				<div class="black"></div>
+				<form action="#" method="post">
+					<div class="gray">
+						<div class="wrap">
+							<p>Мы работаем в этой области уже много лет и готовы ответить на все ваши вопросы, а также предоставить вам дополнительные материалы по интересующей вас тематике.</p>
+							<h2>СВЯЖИТЕСЬ С НАМИ</h2>
+							<input type="text" placeholder="Ваше имя"/><br>
+							<input type="text" placeholder="Контактный номер телефона"/><br>
+							<input type="text" placeholder="e-Mail"/><br>
+							<input type="text" placeholder="Тема сообщения"/>
+						</div>
+					</div>
+					<div class="wrap">
+						<textarea ></textarea><br>
+						<input type="submit" value="Отправить"/>
+					</div>
+				</form>
+			</section>
+			<div class="wrap">
+				<div id="map"></div>
+				<h2>НАШИ КОНТАКТЫ</h2>
+				<address >МОСКВА, Ярославское шоссе, д.26<br>+7 4952257474 <br>+7 4952257474<br> <a href="">email@gmail.com</a></address>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<img src="img/footer.png" width="229" height="388" alt="" class="footer-img"/>
+		<div class="footer">
+			<div class="footer-wrap">
+				<div class="fl">
+					<div>
+						<a href="#">Дружественный университет</a><br>
+						<a href="#">Обязательная ссылка на какой-то госресурс</a><br>
+						<a href="#">Обязательная ссылка на какой-то госресурс</a><br>
+						<a href="#">Национальный исследовательский университет</a><br>
+						<a href="#">Дружественный университет</a>
+					</div>
+				</div>
+				<div class="fl">
+					<div>
+						<a href="#">Дружественный университет</a><br>
+						<a href="#">Обязательная ссылка на какой-то госресурс</a><br>
+						<a href="#">Обязательная ссылка на какой-то госресурс</a><br>
+						<a href="#">Национальный исследовательский университет</a><br>
+						<a href="#">Дружественный университет</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/libs/jquery.jcarousel.min.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script>
+		$(function() {
+         var latlng = new google.maps.LatLng(55.856528,37.690187);
+			var settings = {
+				zoom: 14,
+				center: latlng,
+				mapTypeControl: false,
+				navigationControl: true,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			};
+			var map = new google.maps.Map(document.getElementById("map"), settings);
+			var companyMarker = new google.maps.Marker({
+				position: latlng,
+				map: map
+            });
+		});
+	</script>
+</body>
+</html>
