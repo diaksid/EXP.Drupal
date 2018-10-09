@@ -6,6 +6,7 @@
       <excludeFolder url="file://$MODULE_DIR$/sites/default/files/css" />
       <excludeFolder url="file://$MODULE_DIR$/sites/default/files/js" />
       <excludeFolder url="file://$MODULE_DIR$/sites/default/files/languages" />
+      <excludeFolder url="file://$MODULE_DIR$/sites/default/files/styles" />
       <excludeFolder url="file://$MODULE_DIR$/sites/default/files/xmlsitemap" />
     </content>
     <orderEntry type="inheritedJdk" />
